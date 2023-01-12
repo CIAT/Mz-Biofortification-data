@@ -1,0 +1,1268 @@
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)#
+#
+pts <- na.omit(pts)
+# from a matrix #
+m <- matrix(1:25, nrow=5, ncol=5)#
+rm <- rast(m)
+m <- matrix(1:50, nrow=5, ncol=10)
+rm <- rast(m)
+# Get sampled locations#
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')#
+#
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)#
+#
+pts <- matrix(na.omit(pts))
+pts <- rast(pst)
+pts <- rast(pts)
+pts <- matrix(na.omit(pts))#
+#
+pts <- rast(pts)
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')#
+#
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)#
+#
+pts <- matrix(na.omit(pts[,1:2]))#
+#
+pts <- rast(pts)
+pts[1:4,]
+# Get sampled locations#
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')#
+#
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)#
+#
+pts <- matrix(na.omit(pts[,1:2]))
+pts[1:3,]
+pts
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')#
+#
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)
+pts[1;4,]
+pts[1:4,]
+pts <- na.omit(pts[,1:2])
+pts <- as.matrix(na.omit(pts[,1:2]))
+class(pts)
+pts
+pts[1:4,]
+pts <- rast(pts)
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')#
+#
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)#
+#
+pts <- as.matrix(na.omit(pts[,1:2]))#
+pts <- rast(pts,rs="+proj=longlat +datum=WGS84")
+# Get sampled locations#
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')#
+#
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)#
+#
+pts <- as.matrix(na.omit(pts[,1:2]))#
+pts <- rast(pts)
+crs="+proj=longlat +datum=WGS84"
+p <- project(pts, crs)
+crs <- "+proj=longlat +datum=WGS84"
+crs
+p <- project(pts, crs)
+# Get sampled locations#
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')#
+#
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)#
+#
+pts <- as.matrix(na.omit(pts[,1:2]))#
+pts <- rast(pts)#
+#
+crs <- "+proj=longlat +datum=WGS84"#
+#
+p <- project(pts, crs)
+pts
+pts <- rast(pts)#
+#
+crs <- "+proj=longlat +datum=WGS84"#
+#
+p <- project(pts, crs)
+# Get sampled locations#
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')#
+#
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)#
+#
+pts <- as.matrix(na.omit(pts[,1:2]))#
+pts <- rast(pts,crs="+proj=longlat +datum=WGS84")
+mpc
+mpc <- rast('~/Downloads/MostProbable.vrt')
+mpc
+dem_s <- extract(mpc, pts)
+class(mpc)
+class(pts)
+dem_s <- lapp(mpc, pts)
+dem_s <- sapp(mpc, pts)
+dem_s <- app(mpc, pts)
+mpc
+dem_s <- app(mpc, pts)
+pts
+plot(pts)
+# Get sampled locations#
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')#
+#
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)
+pts <- as.matrix(na.omit(pts[,1:2]))
+pts <- rast(pts,crs="+proj=longlat +datum=WGS84")
+pts
+library(terra)#
+#
+help(terra)#
+#
+library(dplyr)#
+#
+mpc <- rast('~/Downloads/MostProbable.vrt')#
+#
+# Get sampled locations#
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')#
+#
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)#
+#
+pts <- as.matrix(na.omit(pts[,1:2]))#
+pts <- vect(pts,crs="+proj=longlat +datum=WGS84")
+bb_p <- extract(mpc, pts)
+mpc <- rast('~/Downloads/MostProbable.vrt')
+mpc <- rast('~/Downloads/MostProbable.vrt')#
+#
+# Get sampled locations#
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')#
+#
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)
+pts <- as.matrix(na.omit(pts[,1:2]))
+pts <- vect(pts,crs="+proj=longlat +datum=WGS84")
+bb_p <- extract(mpc, pts)
+mpc <- rast('~/Downloads/MostProbable0.vrt.ovr')
+mpc
+str(mpc)
+mpc <- rast('~/Downloads/MostProbable.vrt.ovr')
+mpc
+bb_p <- extract(mpc, pts)
+bb_p
+str(mpc)
+mpc
+library(dplyr)#
+#
+mpc <- rast('~/Downloads/MostProbable.vrt')#
+#
+# Get sampled locations#
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')#
+#
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)#
+#
+pts <- as.matrix(na.omit(pts[,1:2]))#
+pts <- vect(pts,crs="+proj=longlat +datum=WGS84")#
+bb_p <- extract(mpc, pts)
+mpc <- rast('~/Downloads/MostProbable.vrt.ovr')
+mpc <- rast('~/Downloads/MostProbable.vrt')
+library(rgdal)#
+library(gdalUtils)#
+bb=c(-337500.000,1242500.000,152500.000,527500.000) # Example bounding box (homolosine) for Ghana#
+igh='+proj=igh +lat_0=0 +lon_0=0 +datum=WGS84 +units=m +no_defs' # proj string for Homolosine projection
+sg_url="/vsicurl?max_retry=3&retry_delay=1&list_dir=no&url=https://files.isric.org/soilgrids/latest/data/"
+gdal_translate(paste0(sg_url,'ocs/ocs_0-30cm_mean.vrt'),#
+    "./crop_roi_igh_r.tif",#
+    tr=c(250,250),#
+    projwin=bb,#
+    projwin_srs =igh,#
+    verbose=TRUE)
+gdal_translate("./crop_roi_ll_r.vrt",  #
+    "./crop_roi_ll_r.tif", #
+    co=c("TILED=YES","COMPRESS=DEFLATE","PREDICTOR=2","BIGTIFF=YES"))
+gdal_translate(paste0(sg_url,'ocs/ocs_0-30cm_mean.vrt'),#
+    "./crop_roi_igh_r.tif",#
+    tr=c(250,250),#
+    projwin=bb,#
+    projwin_srs =igh,#
+    verbose=TRUE)
+?readgdal
+?read.gdal
+library(rgdal)
+?read.gdal
+?readgdal
+test <- readGDALl('~/Downloads/MostProbable.vrt.ovr')
+test <- readGDAL('~/Downloads/MostProbable.vrt.ovr')
+str(test)
+test <- raster('~/Downloads/MostProbable.vrt.ovr')
+library(raster)
+test <- raster('~/Downloads/MostProbable.vrt.ovr')
+str(test)
+test <- rast('~/Downloads/MostProbable.vrt.ovr')
+str(test)
+mpc <- rast('~/Downloads/MostProbable.vrt')
+mpc
+str(mpc)
+bb_p <- extract(mpc, pts)
+bb_p <- extract(test, pts)
+bb_p
+plot(mpc)
+mpc <- rast('~/Downloads/MostProbable.vrt')
+plot(mpc)
+mpc
+names(mpc)
+mpc@RSG
+mpc$RSG
+str(mpc$RSG)
+# Get sampled locations#
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')#
+#
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)
+library(dplyr)#
+#
+mpc <- rast('~/Downloads/MostProbable.vrt')#
+#
+# Get sampled locations#
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')#
+#
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)
+mpc <- rast('~/Downloads/MostProbable.vrt')
+library(dplyr)
+mpc <- rast('~/Downloads/MostProbable.vrt')
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))
+library(osmdata)
+install.packages('osmdata')
+install.packages('osmdata', dependencies = TRUE)
+library(rgdal)#
+library(gdalUtils)#
+bb=c(-337500.000,1242500.000,152500.000,527500.000) # Example bounding box (homolosine) for Ghana#
+igh='+proj=igh +lat_0=0 +lon_0=0 +datum=WGS84 +units=m +no_defs' # proj string for Homolosine projection#
+#
+sg_url="/vsicurl?max_retry=3&retry_delay=1&list_dir=no&url=https://files.isric.org/soilgrids/latest/data/"
+gdal_translate(paste0(sg_url,'ocs/ocs_0-30cm_mean.vrt'),#
+    "./crop_roi_igh_r.tif",#
+    tr=c(250,250),#
+    projwin=bb,#
+    projwin_srs =igh,#
+    verbose=TRUE)
+before <- runif(50,1906,2000)
+after <- runif(50, 2001,2020)
+pubs <- c(before, after)
+summary([ubs])
+summary(pubs)
+before <- runif(20,1906,2000)#
+#
+after <- runif(80, 2001,2020)#
+#
+pubs <- c(before, after)#
+#
+summary(pubs)
+before <- runif(50,1906,2000)#
+#
+after <- runif(195, 2001,2020)#
+#
+pubs <- c(before, after)#
+#
+summary(pubs)
+before <- runif(45,1906,2000)#
+#
+after <- runif(195, 2001,2020)#
+#
+pubs <- c(before, after)#
+#
+summary(pubs)
+plot(hist(pubs))
+before <- runif(10,1906,1980)#
+#
+mids <- runif(35, 1981,2000)#
+#
+after <- runif(195, 2001,2020)#
+#
+pubs <- c(before, mids, after)#
+#
+summary(pubs)#
+#
+plot(hist(pubs))
+before <- runif(10,1906,1980)#
+#
+mids <- runif(35, 1981,2000)#
+#
+after <- runif(195, 2001,2020)#
+#
+pubs <- c(before, mids, after)#
+#
+summary(pubs)#
+#
+plot(hist(pubs))
+library(shiny)#
+library(leaflet)#
+#
+ui <- fluidPage(#
+  geoloc::onload_geoloc(),#
+  leafletOutput("lf")#
+)#
+#
+server <- function(input, output) {#
+  output$lf <- renderLeaflet({#
+    req(input$geoloc_lon)#
+    req(input$geoloc_lat)#
+    leaflet() %>%#
+      addTiles() %>%#
+      setView(as.numeric(input$geoloc_lon), as.numeric(input$geoloc_lat), zoom = 17) %>%#
+      addMarkers(as.numeric(input$geoloc_lon), as.numeric(input$geoloc_lat), label = "You're here!")#
+  })#
+}#
+#
+shinyApp(ui, server)
+install.packages('geoloc')
+install.packages('geoloc')
+remotes::install_github("ColinFay/geoloc")
+library(shiny)#
+library(leaflet)#
+#
+ui <- fluidPage(#
+  geoloc::onload_geoloc(),#
+  leafletOutput("lf")#
+)#
+#
+server <- function(input, output) {#
+  output$lf <- renderLeaflet({#
+    req(input$geoloc_lon)#
+    req(input$geoloc_lat)#
+    leaflet() %>%#
+      addTiles() %>%#
+      setView(as.numeric(input$geoloc_lon), as.numeric(input$geoloc_lat), zoom = 17) %>%#
+      addMarkers(as.numeric(input$geoloc_lon), as.numeric(input$geoloc_lat), label = "You're here!")#
+  })#
+}#
+#
+shinyApp(ui, server)
+library(shiny)#
+library(dplyr)#
+library(leaflet)#
+library(DT)#
+shinyServer(function(input, output) {#
+#
+  # Import Data and clean it#
+  bb_data <- read.csv("data/blood-banks.csv", stringsAsFactors = FALSE )#
+#
+  bb_data <- data.frame(bb_data)#
+#
+  bb_data$Latitude <-  as.numeric(bb_data$Latitude)#
+#
+  bb_data$Longitude <-  as.numeric(bb_data$Longitude)#
+#
+  bb_data=filter(bb_data, Latitude != "NA") # removing NA values#
+  # new column for the popup label#
+  bb_data <- mutate(bb_data, cntnt=paste0('<strong>Name: </strong>',Blood.Bank.Name,#
+#
+                                          '<br><strong>State:</strong> ', State,#
+#
+                                          '<br><strong>Time:</strong> ', Service.Time,#
+#
+                                          '<br><strong>Mobile:</strong> ',Mobile,#
+#
+                                          '<br><strong>HelpLine:</strong> ',Helpline,#
+#
+                                          '<br><strong>Contact1:</strong> ',Contact.No.1,#
+#
+                                          '<br><strong>Contact2:</strong> ',Contact.No.2,#
+#
+                                          '<br><strong>Contact3:</strong> ',Contact.No.3,#
+#
+                                          '<br><strong>Contact4:</strong> ',Contact.No.4,#
+#
+                                          '<br><strong>Contact5:</strong> ',Contact.No.5,#
+#
+                                          '<br><strong>Contact6:</strong> ',Contact.No.6,#
+#
+                                          '<br><strong>Contact7:</strong> ',Contact.No.7,#
+#
+                                          '<br><strong>Email:</strong> ',Email,#
+#
+                                          '<br><strong>Website:</strong> ',Website)) #
+  # create a color paletter for category type in the data file#
+  pal <- colorFactor(pal = c("#1b9e77", "#d95f02", "#7570b3"), domain = c("Charity", "Government", "Private"))#
+  # create the leaflet map  #
+#
+  output$bbmap <- renderLeaflet({#
+#
+      leaflet(bb_data) %>% #
+#
+      addCircles(lng = ~Longitude, lat = ~Latitude) %>% #
+#
+      addTiles() %>%#
+#
+      addCircleMarkers(data = bb_data, lat =  ~Latitude, lng =~Longitude, #
+#
+                       radius = 3, popup = ~as.character(cntnt), #
+#
+                       color = ~pal(Category),#
+#
+                       stroke = FALSE, fillOpacity = 0.8)%>%#
+#
+      addLegend(pal=pal, values=bb_data$Category,opacity=1, na.label = "Not Available")%>%#
+#
+      addEasyButton(easyButton(#
+#
+        icon="fa-crosshairs", title="ME",#
+#
+        onClick=JS("function(btn, map){ map.locate({setView: true}); }")))#
+#
+        })#
+  #create a data object to display data#
+  output$data <-DT::renderDataTable(datatable(#
+#
+      bb_data[,c(-1,-23,-24,-25,-28:-35)],filter = 'top',#
+#
+      colnames = c("Blood Bank Name", "State", "District", "City", "Address", "Pincode","Contact No.",#
+#
+                   "Mobile","HelpLine","Fax","Email", "Website","Nodal Officer", "Contact of Nodal Officer",#
+#
+                   "Mobile of Nodal Officer", "Email of Nodal Officer","Qualification", "Category", "Blood Component Available",#
+#
+                   "Apheresis", "Service Time", "Lat", "Long.")#
+#
+  ))#
+})
+library(shiny)
+setwd('~/Alliance/Job/App')
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+bb_data <- read.csv("data/AR_TZ_BabyTrials_20092021.csv", stringsAsFactors = FALSE )
+bb_data <- read.csv("data/AR_TZ_BabyTrials_20092021.csv", stringsAsFactors = FALSE )
+bb_data <- data.frame(bb_data)
+names(bb_data)
+bb_data <- read.csv("data/AR_TZ_BabyTrials_20092021.csv", stringsAsFactors = FALSE )#
+#
+  bb_data <- data.frame(bb_data)#
+#
+  bb_data$Latitude <-  as.numeric(bb_data$Lat)#
+#
+  bb_data$Longitude <-  as.numeric(bb_data$Long)#
+#
+  bb_data=filter(bb_data, Latitude != "NA") # removing NA values
+bb_data <- read.csv("data/AR_TZ_BabyTrials_20092021.csv", stringsAsFactors = FALSE )#
+#
+  bb_data <- data.frame(bb_data)#
+#
+  bb_data$Latitude <-  as.numeric(bb_data$Lat)#
+#
+  bb_data$Longitude <-  as.numeric(bb_data$Long)
+dim(bb_data)
+bb_data=filter(bb_data, Latitude != "NA") # removing NA values
+dim(bb_data)
+unique(bb_data$ARZone)
+pal <- colorFactor(pal = c("#1b9e77", "#d95f02"), domain = c("Babati", "Kongwa"))
+# create the leaflet map  #
+#
+  output$bbmap <- renderLeaflet({#
+#
+      leaflet(bb_data) %>% #
+#
+      addCircles(lng = ~Longitude, lat = ~Latitude) %>% #
+#
+      addTiles() %>%#
+#
+      addCircleMarkers(data = bb_data, lat =  ~Latitude, lng =~Longitude, #
+#
+                       radius = 3, popup = ~as.character(cntnt), #
+#
+                       color = ~pal(ARZone),#
+#
+                       stroke = FALSE, fillOpacity = 0.8)%>%#
+#
+      addLegend(pal=pal, values=bb_data$Category,opacity=1, na.label = "Not Available")%>%#
+#
+      addEasyButton(easyButton(#
+#
+        icon="fa-crosshairs", title="ME",#
+#
+        onClick=JS("function(btn, map){ map.locate({setView: true}); }")))#
+#
+        })
+leaflet(bb_data) %>% #
+#
+      addCircles(lng = ~Longitude, lat = ~Latitude) %>% #
+#
+      addTiles() %>%#
+#
+      addCircleMarkers(data = bb_data, lat =  ~Latitude, lng =~Longitude, #
+#
+                       radius = 3, popup = ~as.character(cntnt), #
+#
+                       color = ~pal(ARZone),#
+#
+                       stroke = FALSE, fillOpacity = 0.8)%>%#
+#
+      addLegend(pal=pal, values=bb_data$Category,opacity=1, na.label = "Not Available")%>%#
+#
+      addEasyButton(easyButton(#
+#
+        icon="fa-crosshairs", title="ME",#
+#
+        onClick=JS("function(btn, map){ map.locate({setView: true}); }")))
+leaflet(bb_data) %>% #
+#
+      addCircles(lng = ~Longitude, lat = ~Latitude) %>% #
+#
+      addTiles() %>%#
+#
+      addCircleMarkers(data = bb_data, lat =  ~Latitude, lng =~Longitude, #
+#
+                       radius = 3, popup = ~as.character(vilage), #
+#
+                       color = ~pal(ARZone),#
+#
+                       stroke = FALSE, fillOpacity = 0.8)%>%#
+#
+      addLegend(pal=pal, values=bb_data$Category,opacity=1, na.label = "Not Available")%>%#
+#
+      addEasyButton(easyButton(#
+#
+        icon="fa-crosshairs", title="ME",#
+#
+        onClick=JS("function(btn, map){ map.locate({setView: true}); }")))
+leaflet(bb_data) %>% #
+#
+      addCircles(lng = ~Longitude, lat = ~Latitude) %>% #
+#
+      addTiles() %>%#
+#
+      addCircleMarkers(data = bb_data, lat =  ~Latitude, lng =~Longitude, #
+#
+                       radius = 3, popup = ~as.character(Vilage), #
+#
+                       color = ~pal(ARZone),#
+#
+                       stroke = FALSE, fillOpacity = 0.8)%>%#
+#
+      addLegend(pal=pal, values=bb_data$Category,opacity=1, na.label = "Not Available")%>%#
+#
+      addEasyButton(easyButton(#
+#
+        icon="fa-crosshairs", title="ME",#
+#
+        onClick=JS("function(btn, map){ map.locate({setView: true}); }")))
+pal <- colorFactor(pal = c("red", "blue"), domain = c("Babati", "Kongwa"))
+leaflet(bb_data) %>% #
+#
+      addCircles(lng = ~Longitude, lat = ~Latitude) %>% #
+#
+      addTiles() %>%#
+#
+      addCircleMarkers(data = bb_data, lat =  ~Latitude, lng =~Longitude, #
+#
+                       radius = 3, popup = ~as.character(Vilage), #
+#
+                       color = ~pal(ARZone),#
+#
+                       stroke = FALSE, fillOpacity = 0.8)%>%#
+#
+      addLegend(pal=pal, values=bb_data$Category,opacity=1, na.label = "Not Available")%>%#
+#
+      addEasyButton(easyButton(#
+#
+        icon="fa-crosshairs", title="ME",#
+#
+        onClick=JS("function(btn, map){ map.locate({setView: true}); }")))
+source("/Users/andrewsila/Alliance/Job/App/server.R")
+source("/Users/andrewsila/Alliance/Job/App/server.R")
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+source("/Users/andrewsila/Alliance/Job/App/server.R")
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+dim(bb_data)
+bb_data <- bb_data %>%#
+         filter(Vilage != "Mlali")
+dim(bb_data)
+bb_data <- read.csv("data/AR_TZ_BabyTrials_20092021.csv", stringsAsFactors = FALSE )#
+#
+  bb_data <- data.frame(bb_data)#
+#
+  bb_data$Latitude <-  as.numeric(bb_data$Lat)#
+#
+  bb_data$Longitude <-  as.numeric(bb_data$Long)#
+#
+  bb_data=filter(bb_data, Latitude != "NA") # removing NA values#
+  # new column for the popup label#
+  # create a color paletter for category type in the data file#
+  pal <- colorFactor(pal = c("red", "blue"), domain = c("Babati", "Kongwa"))#
+#
+   bb_data <- bb_data %>%#
+         filter(Vilage == "Mlali")
+bb_data
+with(bb_data, plot(Latitude, Longitude))
+with(bb_data, plot(Latitude ~ Longitude))
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+bb_data$ARZone
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+# Import Data and clean it#
+  bb_data <- read.csv("data/AR_TZ_BabyTrials_20092021.csv", stringsAsFactors = FALSE )#
+#
+  bb_data <- data.frame(bb_data)#
+#
+  bb_data$Latitude <-  as.numeric(bb_data$Lat)#
+#
+  bb_data$Longitude <-  as.numeric(bb_data$Long)#
+#
+  bb_data=filter(bb_data, Latitude != "NA") # removing NA values#
+  # new column for the popup label#
+  # create a color paletter for category type in the data file#
+  pal <- colorFactor(pal = c("red", "blue"), domain = c("Babati", "Kongwa"))#
+#
+   #bb_data <- bb_data %>%#
+         #filter(Vilage != "Mlali")#
+#
+  # create the leaflet map  #
+#
+  output$bbmap <- renderLeaflet({#
+#
+      leaflet(bb_data) %>% #
+#
+      addCircles(lng = ~Longitude, lat = ~Latitude) %>% #
+#
+      addTiles() %>%#
+#
+      addCircleMarkers(data = bb_data, lat =  ~Latitude, lng =~Longitude, #
+#
+                       radius = 3, popup = ~as.character(Vilage), #
+#
+                       color = ~pal(ARZone),#
+#
+                       stroke = FALSE, fillOpacity = 0.2)%>%#
+#
+      addLegend(pal=pal, values=bb_data$ARZone,opacity=1, na.label = "Not Available")%>%#
+#
+      addEasyButton(easyButton(#
+#
+        icon="fa-crosshairs", title="ME",#
+#
+        onClick=JS("function(btn, map){ map.locate({setView: true}); }")))#
+#
+        })
+# Import Data and clean it#
+  bb_data <- read.csv("data/AR_TZ_BabyTrials_20092021.csv", stringsAsFactors = FALSE )#
+#
+  bb_data <- data.frame(bb_data)#
+#
+  bb_data$Latitude <-  as.numeric(bb_data$Lat)#
+#
+  bb_data$Longitude <-  as.numeric(bb_data$Long)#
+#
+  bb_data=filter(bb_data, Latitude != "NA") # removing NA values#
+  # new column for the popup label#
+  # create a color paletter for category type in the data file#
+  pal <- colorFactor(pal = c("red", "blue"), domain = c("Babati", "Kongwa"))#
+#
+   #bb_data <- bb_data %>%#
+         #filter(Vilage != "Mlali")#
+#
+  # create the leaflet map
+leaflet(bb_data) %>% #
+#
+      addCircles(lng = ~Longitude, lat = ~Latitude) %>% #
+#
+      addTiles() %>%#
+#
+      addCircleMarkers(data = bb_data, lat =  ~Latitude, lng =~Longitude, #
+#
+                       radius = 3, popup = ~as.character(Vilage), #
+#
+                       color = ~pal(ARZone),#
+#
+                       stroke = FALSE, fillOpacity = 0.2)%>%#
+#
+      addLegend(pal=pal, values=bb_data$ARZone,opacity=1, na.label = "Not Available")%>%#
+#
+      addEasyButton(easyButton(#
+#
+        icon="fa-crosshairs", title="ME",#
+#
+        onClick=JS("function(btn, map){ map.locate({setView: true}); }")))
+leaflet(bb_data) %>% #
+#
+      addCircles(lng = ~Longitude, lat = ~Latitude) %>% #
+#
+      addTiles() %>%#
+#
+      addCircleMarkers(data = bb_data, lat =  ~Latitude, lng =~Longitude, #
+#
+                       radius = 3, popup = ~as.character(Vilage), #
+#
+                       color = ~pal(ARZone),#
+#
+                       stroke = FALSE, fillOpacity = 0.8)%>%#
+#
+      addLegend(pal=pal, values=bb_data$ARZone,opacity=1, na.label = "Not Available")%>%#
+#
+      addEasyButton(easyButton(#
+#
+        icon="fa-crosshairs", title="ME",#
+#
+        onClick=JS("function(btn, map){ map.locate({setView: true}); }")))
+leaflet(bb_data) %>% #
+#
+      addCircles(lng = ~Longitude, lat = ~Latitude) %>% #
+#
+      addTiles() %>%#
+#
+      addCircleMarkers(data = bb_data, lat =  ~Latitude, lng =~Longitude, #
+#
+                       radius = 3, popup = ~as.character(ARZone), #
+#
+                       color = ~pal(ARZone),#
+#
+                       stroke = FALSE, fillOpacity = 0.8)%>%#
+#
+      addLegend(pal=pal, values=bb_data$ARZone,opacity=1, na.label = "Not Available")%>%#
+#
+      addEasyButton(easyButton(#
+#
+        icon="fa-crosshairs", title="ME",#
+#
+        onClick=JS("function(btn, map){ map.locate({setView: true}); }")))
+addCircleMarkers
+?addCircleMarkers
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+tabPanel("Map", leafletOutput("bbmap", height=1000)),#
+#
+           tabPanel("Data", DT::dataTableOutput("data")),
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+?navbarPage
+bb_data <- read.csv("data/AR_TZ_BabyTrials_20092021.csv", stringsAsFactors = FALSE )#
+#
+  bb_data <- data.frame(bb_data)#
+#
+  bb_data$Latitude <-  as.numeric(bb_data$Lat)#
+#
+  bb_data$Longitude <-  as.numeric(bb_data$Long)#
+#
+  bb_data=filter(bb_data, Latitude != "NA") # removing NA values
+bb_data <- read.csv("data/AR_TZ_BabyTrials_20092021.csv", stringsAsFactors = FALSE )#
+#
+  bb_data <- data.frame(bb_data)#
+#
+  bb_data$Latitude <-  as.numeric(bb_data$Lat)#
+#
+  bb_data$Longitude <-  as.numeric(bb_data$Long)#
+#
+  bb_data=filter(bb_data, Latitude != "NA") # removing NA values
+with(bb_data, plot(Latitude ~ Longitude))
+which(bb_data$Latitude > -2)
+bb_data[c(29,136),1:9]
+bb_data[c(29,136),]
+?renderLeaflet
+source("/Users/andrewsila/Alliance/Job/App/server.R")
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+library(shinydashboard)#
+#
+ui <- dashboardPage(#
+  dashboardHeader(title = "Value boxes"),#
+  dashboardSidebar(),#
+  dashboardBody(#
+    fluidRow(#
+      # A static valueBox#
+      valueBox(10 * 2, "New Orders", icon = icon("credit-card")),#
+#
+      # Dynamic valueBoxes#
+      valueBoxOutput("progressBox"),#
+#
+      valueBoxOutput("approvalBox")#
+    ),#
+    fluidRow(#
+      # Clicking this will increment the progress amount#
+      box(width = 4, actionButton("count", "Increment progress"))#
+    )#
+  )#
+)#
+#
+server <- function(input, output) {#
+  output$progressBox <- renderValueBox({#
+    valueBox(#
+      paste0(25 + input$count, "%"), "Progress", icon = icon("list"),#
+      color = "purple"#
+    )#
+  })#
+#
+  output$approvalBox <- renderValueBox({#
+    valueBox(#
+      "80%", "Approval", icon = icon("thumbs-up", lib = "glyphicon"),#
+      color = "yellow"#
+    )#
+  })#
+}#
+#
+shinyApp(ui, server)
+?valueBox
+library(shinydashboard)
+install.packages(shinydashboard)
+install.packages('shinydashboard')
+library(shinydashboard)#
+#
+ui <- dashboardPage(#
+  dashboardHeader(title = "Value boxes"),#
+  dashboardSidebar(),#
+  dashboardBody(#
+    fluidRow(#
+      # A static valueBox#
+      valueBox(10 * 2, "New Orders", icon = icon("credit-card")),#
+#
+      # Dynamic valueBoxes#
+      valueBoxOutput("progressBox"),#
+#
+      valueBoxOutput("approvalBox")#
+    ),#
+    fluidRow(#
+      # Clicking this will increment the progress amount#
+      box(width = 4, actionButton("count", "Increment progress"))#
+    )#
+  )#
+)#
+#
+server <- function(input, output) {#
+  output$progressBox <- renderValueBox({#
+    valueBox(#
+      paste0(25 + input$count, "%"), "Progress", icon = icon("list"),#
+      color = "purple"#
+    )#
+  })#
+#
+  output$approvalBox <- renderValueBox({#
+    valueBox(#
+      "80%", "Approval", icon = icon("thumbs-up", lib = "glyphicon"),#
+      color = "yellow"#
+    )#
+  })#
+}#
+#
+shinyApp(ui, server)
+?navbarPage
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+library(shiny)#
+#
+library(leaflet)#
+#
+navbarPage("Collection of Maize Biofortification Surveyed Farms", theme = "solar", id="main",#
+           tabPanel("Read Me",includeMarkdown("readme.md")),#
+           tabPanel("Map", leafletOutput("bbmap", height=1000)),#
+#
+           tabPanel("Data", DT::dataTableOutput("data")))
+edit(navbarPage)
+edit(bslib::page_navbar)
+library(shiny)#
+#
+setwd('~/Alliance/Job/App')#
+#
+runApp()
+1000/150
+library(raster)#
+#
+library(geodata)#
+#
+library(dplyr)#
+#
+library(rayshader) #3D plotting.#
+#
+library(geoviz) #Elevation data downloader.#
+#
+library(av) #For making videos (only needed if you want to make things like rotating GIFs).#
+#
+detach("package:spatstat", unload=TRUE)#
+#
+path <- '~/Alliance/Job/Data/iSDA'#
+#
+soil <- c("al", "bdr", "clay", "c.tot", "ca", "db.od", "ecec.f", "fe", "k", "mg", "n.tot", "oc", "p", "ph.h2o", "sand", "silt", "s", "texture", "wpg2", "zn")#
+#
+al <- soil_af_isda("al", path=path)#
+#
+al <- soil_af_isda("bdr", path=path)#
+#
+clay <- soil_af_isda("clay", path=path)#
+#
+ctot <- soil_af_isda("c.tot", path=path)#
+#
+ca <- soil_af_isda("ca", path=path)#
+#
+ecec.f <- soil_af_isda("ecec.f", path=path)#
+#
+fe <- soil_af_isda("fe", path=path)#
+#
+k <- soil_af_isda("k", path=path)#
+#
+mg <- soil_af_isda("mg", path=path)#
+#
+ntot <- soil_af_isda("n.tot", path=path)#
+#
+oc <- soil_af_isda("oc", path=path)#
+#
+p <- soil_af_isda("p", path=path)#
+#
+ph <- soil_af_isda("ph.h2o", path=path)#
+#
+sand <- soil_af_isda("sand", path=path)#
+#
+silt <- soil_af_isda("silt", path=path)#
+#
+s <- soil_af_isda("s", path=path)#
+#
+texture <- soil_af_isda("texture", path=path)#
+#
+wpg2<- soil_af_isda("wpg2", path=path)#
+#
+zn <- soil_af_isda("zn", path=path)#
+#
+afph <-  raster('~/Alliance/Job/Data/iSDA/isda_ph.h2o_0-20cm_v0.13_30s.tif')#
+#
+# Get country shape file#
+#getData('GADM', country = 'TZ', level = 1)#
+#
+plot(afph,ylim = c(-4.4, -4.2), xlim = c(35.2,35.9))#
+#
+# Get sampled locations#
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')#
+#
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)#
+#
+class(afph)#
+#
+pts <- na.omit(pts)#
+#
+coordinates(pts) <- ~ gpslongitude + gpslatitude#
+#
+class(pts)#
+#
+str(pts)#
+#
+proj4string(pts) <- '+proj=longlat +datum=WGS84 +no_defs' # To assign the CRS (IF IT IS KNOWN!!!)#
+str(pts) # Note the presence of proj4string info#
+#
+extent(afph)#
+#
+extent(pts)#
+#
+#plot(dem, xlim = c(-4.4, -4.1), ylim = c(35, 36))#
+points(pts, pch=20, cex=.1, col = "red") #add the cedar localities#
+#
+slope <- terrain(dem, "slope")#
+#
+aspect <- terrain(dem, "aspect")#
+#
+TPI <- terrain(dem, "TPI") # Topographic Position Index#
+#
+TRI <- terrain(dem,"TRI") # Topographic Ruggedness Index#
+#
+roughness <- terrain(dem, "roughness")#
+#
+flowdir <- terrain(dem, "flowdir")#
+eastwest <- sin(aspect)#
+#
+northsouth <- cos(aspect)#
+#
+names(eastwest) <- "eastwest"#
+#
+names(northsouth) <- "northsouth"#
+#
+names(dem) <- "dem"#
+#
+topo <- stack(dem, aspect,slope, eastwest, northsouth,TPI,TRI, roughness, flowdir)#
+#
+topo#
+#
+myCol <- terrain.colors(13)#
+#
+plot(topo,col=myCol)#
+plot(topo)#
+#
+points(pts, pch=20, cex=.1, col = "red") #add the cedar localities#
+#
+# Extract slope position and topographic positions#
+ph_s <- terra::extract(afph, pts)
+library(raster)#
+#
+library(geodata)#
+#
+library(dplyr)#
+#
+library(rayshader) #3D plotting.#
+#
+library(geoviz) #Elevation data downloader.#
+#
+library(av) #For making videos (only needed if you want to make things like rotating GIFs).#
+#
+detach("package:spatstat", unload=TRUE)#
+#
+path <- '~/Alliance/Job/Data/iSDA'
+afph <-  raster('~/Alliance/Job/Data/iSDA/isda_ph.h2o_0-20cm_v0.13_30s.tif')
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)#
+#
+class(afph)#
+#
+pts <- na.omit(pts)#
+#
+coordinates(pts) <- ~ gpslongitude + gpslatitude#
+#
+class(pts)#
+#
+str(pts)#
+#
+proj4string(pts) <- '+proj=longlat +datum=WGS84 +no_defs' # To assign the CRS (IF IT IS KNOWN!!!)#
+str(pts) # Note the presence of proj4string info#
+#
+extent(afph)#
+#
+extent(pts)#
+#
+#plot(dem, xlim = c(-4.4, -4.1), ylim = c(35, 36))#
+points(pts, pch=20, cex=.1, col = "red") #add the cedar localities#
+#
+slope <- terrain(dem, "slope")#
+#
+aspect <- terrain(dem, "aspect")#
+#
+TPI <- terrain(dem, "TPI") # Topographic Position Index#
+#
+TRI <- terrain(dem,"TRI") # Topographic Ruggedness Index#
+#
+roughness <- terrain(dem, "roughness")#
+#
+flowdir <- terrain(dem, "flowdir")#
+eastwest <- sin(aspect)#
+#
+northsouth <- cos(aspect)#
+#
+names(eastwest) <- "eastwest"#
+#
+names(northsouth) <- "northsouth"#
+#
+names(dem) <- "dem"#
+#
+topo <- stack(dem, aspect,slope, eastwest, northsouth,TPI,TRI, roughness, flowdir)#
+#
+topo#
+#
+myCol <- terrain.colors(13)#
+#
+plot(topo,col=myCol)
+ph_s <- terra::extract(afph, pts)
+pts
+afph <-  raster('~/Alliance/Job/Data/iSDA/isda_ph.h2o_0-20cm_v0.13_30s.tif')
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')
+class(pts)
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)
+names(pts)
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))
+pts <- tibble(pts)
+pts <- pts %>%#
+select(c('gpslatitude', 'gpslongitude','gpsaltitude'))
+?select
+pts <- pts %>%#
+dplyr::select(c('gpslatitude', 'gpslongitude','gpsaltitude'))
+# Get sampled locations#
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')#
+#
+pts <- pts %>%#
+dplyr::select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)#
+#
+class(afph)
+pts <- na.omit(pts)#
+#
+coordinates(pts) <- ~ gpslongitude + gpslatitude#
+#
+class(pts)#
+#
+str(pts)#
+#
+proj4string(pts) <- '+proj=longlat +datum=WGS84 +no_defs' # To assign the CRS (IF IT IS KNOWN!!!)#
+str(pts) # Note the presence of proj4string info#
+#
+extent(afph)
+extent(pts)
+points(pts, pch=20, cex=.1, col = "red") #add the cedar localities
+ph_s <- terra::extract(afph, pts)
+ph_s
+length(ph_s)
+str(pts)
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Field_survey_quality.csv')
+str(pts)
+# Get sampled locations#
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Soil not matched with survey data.csv')#
+#
+pts <- pts %>%#
+dplyr::select(c('gpslatitude', 'gpslongitude','gpsaltitude'))
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Soil not matched with survey data.csv')
+names(pts)
+# Get sampled locations#
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Soil data matching agronomic survey.csv')#
+#
+pts <- pts %>%#
+dplyr::select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Soil data matching agronomic survey.csv')
+names(pts)
+# Get sampled locations#
+pts <- read.csv('~/Alliance/Job/Data/Cleaned/Agronomic survey matched with soil.csv')#
+#
+pts <- pts %>%#
+dplyr::select(c('gpslatitude', 'gpslongitude','gpsaltitude'))#
+#
+class(pts)
+dim(pts)
+class(afph)#
+#
+pts <- na.omit(pts)#
+#
+coordinates(pts) <- ~ gpslongitude + gpslatitude#
+#
+class(pts)#
+#
+str(pts)#
+#
+proj4string(pts) <- '+proj=longlat +datum=WGS84 +no_defs' # To assign the CRS (IF IT IS KNOWN!!!)#
+str(pts) # Note the presence of proj4string info#
+#
+extent(afph)#
+#
+extent(pts)#
+#
+#plot(dem, xlim = c(-4.4, -4.1), ylim = c(35, 36))#
+points(pts, pch=20, cex=.1, col = "red") #add the cedar localities
+ph_s <- terra::extract(afph, pts)
+ph_s
+length(ph_s)
+summary(ph_s)
