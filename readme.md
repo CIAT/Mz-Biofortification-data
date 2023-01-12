@@ -12,5 +12,5 @@ In case you observe the data projected on the map in the next tab is incorrect a
 
 
 ## Contacts
-For additional information or clarification please regarding the data or Africa Rising project in general, [Contact Job Kihara at j.kihara@cgiar.org](mailto:j.kihara@cgiar.org)
+For additional information or clarification regarding this dataset or Africa Rising project in general, [Contact Job Kihara at j.kihara@cgiar.org](mailto:j.kihara@cgiar.org)
 
